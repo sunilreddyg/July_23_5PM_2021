@@ -1,5 +1,6 @@
 package mq.java.constructor;
 
+
 public class TestA 
 {
 	
@@ -20,6 +21,8 @@ public class TestA
 		 */
 		
 		new TestA().method1();
+		
+		
 	}
 
 }

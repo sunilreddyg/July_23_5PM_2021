@@ -27,6 +27,8 @@ public class Change_Gear
 		
 		new Change_Gear().Gear1();
 		new Change_Gear().Gear2();
+		
+		
 
 	}
 
