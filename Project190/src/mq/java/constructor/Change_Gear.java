@@ -19,16 +19,13 @@ public class Change_Gear
 		System.out.println("Second gear changed");
 	}
 	
-	
-	
 
 	public static void main(String[] args) 
 	{
 		
 		new Change_Gear().Gear1();
 		new Change_Gear().Gear2();
-		
-		
+	
 
 	}
 
