@@ -1,0 +1,8 @@
+
+Step1:--> Url--> https://v1.hdfcbank.com/branch-atm-locator
+Step2:--> Select StateDropdown Telangana  using  Select visible text option
+Step3:--> Select Citydropdown  Hyderabad  using  selectbyvalue option
+Step4:--> Type locality
+Step5:--> Select Radiusdropdown 5KM  using index option
+Step6:--> Select ATM checkbox
+Step7:--> Click On Search button
