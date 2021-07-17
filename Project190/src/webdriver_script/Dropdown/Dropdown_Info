@@ -81,7 +81,7 @@ Html Source:-->
 Example:---> Select option united kingdom from above source using selectbyvalue
 
 syntax:-->
-	new Select(driver.findElement(By.id(Country)).Selectbyvalue("UK");
+	new Select(driver.findElement(By.id(Country))).Selectbyvalue("UK");
 
 --------------------------------**********------------------------------------
 SelectByIndex:--->>

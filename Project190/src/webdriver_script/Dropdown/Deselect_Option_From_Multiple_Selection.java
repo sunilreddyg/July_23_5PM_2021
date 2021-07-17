@@ -16,6 +16,7 @@ public class Deselect_Option_From_Multiple_Selection
 		driver.get("http://bridgeqsystems.com/demo.php");
 		driver.manage().window().maximize();
 		
+	
 		
 		driver.findElement(By.xpath("//button[contains(.,'Select Menu')]")).click();
 		Thread.sleep(4000);
