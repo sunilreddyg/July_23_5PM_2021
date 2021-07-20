@@ -46,5 +46,3 @@ How developers define different classes for same object:--->
 		driver.findElement(By.cssSelector("div[class='sbtn primary btn login-submit']"));
 		driver.findElement(By.xpath("//div[@class='sbtn primary btn login-submit']"));
 
-============================================================================================================>>>
-How to check property duplication in HTMLSoruce:--->>
