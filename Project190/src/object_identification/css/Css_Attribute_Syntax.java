@@ -1,4 +1,4 @@
-package object_identification;
+package object_identification.css;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

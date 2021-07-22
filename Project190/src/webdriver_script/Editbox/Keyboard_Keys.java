@@ -27,8 +27,8 @@ public class Keyboard_Keys {
 		driver.findElement(By.name("birthday_month")).sendKeys("D");
 		
 		
-		
-		
+	
+
 		/*
 		 * Note:--> Don't use sendkeys method to select dropdown options
 		 * 			Becuase webdriver had separate methdos to do that.

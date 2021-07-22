@@ -142,7 +142,7 @@ page htmlsource:--->
 Identify 3rd element:--->
 		
 			By.id("x")  ---> 2nd object
-			By.cssSelector("div[id='x'][type='C']")  --> 3rd object
+			By.cssSelector("[id='x'][type='C']")  --> 3rd object
 			By.cssSelector("#x[type='C']")  		 --> 3rd object
 =========================================================================
 Css_Attribute with class property:-->
