@@ -262,11 +262,17 @@ Recognize object with Sibling reference:-->
 
 
 <div  id="Container">
-	<input id="MID" type="text">
+	<input id="MID" type="text">        ---> Referecne
 	<selector  class="xyz" ></selector>
 	<div class="abc"></div> -------------------------------------> Target this location
 </div>
 
+		input[id='MID'] + selector + div
+		input[id='MID'] ~ selector ~ div
 
-		input[id='MID'] + selector.xyz  + div
-		input[id='MID'] ~ selector.xyz  ~ div
+
+
+
+
+
+		

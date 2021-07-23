@@ -32,7 +32,7 @@ Recognize object Using Parent Node when Element is duplicated.
 Syntax:-->
 	parenttagname[property='pvalue'] > childtagname
 
-	By.cssSelector("#reg_login > input[id='email']");
+	By.cssSelector("div[id='reg_login'] > input[id='email']");
 
 ==============================================================================
 Example3:-->
