@@ -19,6 +19,9 @@ public class CssSelector_Dynamic_Properties {
 		Thread.sleep(3000);
 
 		driver.findElement(By.cssSelector("[name*='name']")).sendKeys("Sravan");
+		
+		
+		
 	}
 
 }

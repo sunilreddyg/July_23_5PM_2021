@@ -57,17 +57,17 @@ Dynamic Xpath:-->
 Syntax:-->
 		Recognize object using matching characters
 			//tagname[contains(@prop , 'match characters')]
-			//tagname[contains(text() , 'partial visibletext')]
+			//tagname[contains(.,'partial visibletext')]
 			
 		Recognize object using parital attribute or text using start characters
 		
 			//tagname[starts-with(@prop , 'pvalue')]
-			//tagname[starts-with(text() , 'text start chars')]
+			//tagname[starts-with(.,'text start chars')]
 			
 		Recognize object using parital attribute or text using end characters
 		
 			//tagname[ends-with(@prop , 'pvalue')]
-			//tagname[ends-with(text() , 'text end chars')]	
+			//tagname[ends-with(.,'text end chars')]	
 
 =================================================================..
 Example:--> Target Element with partial attribute properites
@@ -79,6 +79,7 @@ Automation browser session:-->
 
 
 	       		//*[contains(@id,'email')]
+	       		//*[starts-with(@id.'email')]
 	       		
 ===================================================================
 To identify Xpath using  AND function.
