@@ -258,7 +258,6 @@ HtmlSource:-->
 					<input id="firstname" name="new">    
 		</div>	
 		
-		
 		//input[@id='firstname']/preceding-sibling::div[2]
 ------------------------------------------------------------------------------->
 Example15:-->
@@ -274,8 +273,7 @@ Example15:-->
 	
 			//input[@id='first_user']/parent::div
 ======================================================================================
-
-Example15:-->
+Example16:-->
 	Recognize parent element using child reference
 
 
