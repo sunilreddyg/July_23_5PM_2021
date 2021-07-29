@@ -1,4 +1,4 @@
-package mq.java.variable;
+package mq.java.variable.initialize_Variables;
 
 public class Variable_Initiation 
 {

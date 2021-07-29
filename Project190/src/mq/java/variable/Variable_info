@@ -111,7 +111,7 @@ Types of variables available in Java?...>
 			void mobile()
 			{
 
-				system.out.println(price);
+				system.out.println(price);   //It shows syntax error
 			//local variable can't share information to other methods
 					
 			}
