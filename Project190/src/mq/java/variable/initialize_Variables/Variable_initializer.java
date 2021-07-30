@@ -2,7 +2,7 @@ package mq.java.variable.initialize_Variables;
 
 public class Variable_initializer 
 {
-	int a;
+	int a=100;
 	int b;
 	
 	public void method1()
@@ -14,8 +14,8 @@ public class Variable_initializer
 	public static void main(String[] args) {
 	
 		Variable_initializer obj=new Variable_initializer();
-		obj.a=100;
-		obj.b=200;
+		obj.a=200;
+		obj.b=300;
 		obj.method1();
 
 	}
