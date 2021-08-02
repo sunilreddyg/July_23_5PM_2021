@@ -12,7 +12,9 @@ public class Run_Reusable_methods_By_user1
 		
 		Reusable_Methods obj=new Reusable_Methods();
 		obj.launch_browser();
-		driver=obj.driver;   
+		driver=obj.driver;  
+		//Getting driver controls from reusablemethods class and 
+		//assigning to current Class globarl variable    
 		
 		obj.load_webpage();
 		System.out.println(driver.getTitle());
