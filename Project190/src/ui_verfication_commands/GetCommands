@@ -109,6 +109,23 @@ getAttribute("propertyname");
   			behaviour of element. by capture element attributes
   			at runtime we can prove element behaviour available
 			w.r.t client requirement.
+			
+			
+			
+Examples:-->
+
+	<input id="email"  style="display:block"  >
+
+
+		String Runtime_Avalue=driver.findElement(By.id("email")).getAttribute("style");
+		System.out.prinln(Runtime_Avalue);  -------------------------------------------------> display:block
+
+
+	<button id="Sbtn"  disabled="disabled">
+
+
+		String Disable_value=driver.findElement(By.id("Sbtn")).getAttribute("disabled");
+		System.out.pritln(Disable_Value); ----------------------------------------------------> true
 		  				
 Example:-->
 			   Captrue editbox input value.
