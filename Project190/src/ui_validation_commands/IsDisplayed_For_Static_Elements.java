@@ -22,24 +22,25 @@ public class IsDisplayed_For_Static_Elements
 		WebElement Signin_btn=driver.findElement(By.xpath("//a[text()='Sign in']"));
 		if(Signin_btn.isDisplayed())
 		{
-			System.out.println("expected Element visible at webpage");
 			Signin_btn.click();
 		}
 		else
-			System.out.println("Signin button not visible at webpage");
-
-		
-		//identify Email location
-		WebElement Email_EB=driver.findElement(By.id("i0116"));
-		if(Email_EB.isDisplayed())
 		{
-			Email_EB.clear();
-			Email_EB.sendKeys("sunilreddy.gajjala@outlook.com");
+			System.out.println("Object not visible at webpage");
+		}
+		
+		
+		
+		WebElement Email_textbox=driver.findElement(By.id("i0116"));
+		if(Email_textbox.isDisplayed())
+		{
+			Email_textbox.clear();
+			Email_textbox.sendKeys("sunilreddy.gajjala@gmail.com");
 		}
 		else
-			System.out.println("Email editbox is not visible at webpage");
-		
-		
+		{
+			System.out.println("Element Not visible at webpage");
+		}
 		
 
 		/*

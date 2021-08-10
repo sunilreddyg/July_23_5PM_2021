@@ -59,11 +59,15 @@ public class Verify_Element_Enable_OR_disableState
 		//Timeout before validate
 		Thread.sleep(5000);
 		
-		
 		if(Locality_Editbox.isEnabled())
-			System.out.println("Testpass editbox enabled after state selection");
+		{
+			System.out.println("Testpass, Locality Editbox is enabled");
+		}
 		else
-			System.out.println("Testfail editbox disabled after state selection");
+		{
+			System.out.println("Testfail, Locality editbox is disabled");
+		}
+		
 	}
 
 }

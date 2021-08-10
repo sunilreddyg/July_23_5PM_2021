@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import net.bytebuddy.description.ModifierReviewable;
-
 public class RuntimeElement_ISDisplayed
 {
 
@@ -17,47 +15,55 @@ public class RuntimeElement_ISDisplayed
 		WebDriver driver=new ChromeDriver();  //Launch browser
 		driver.get("http://www.cleartrip.com");  //Load webpage
 		driver.manage().window().maximize();  //maximize browser window
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 	
-		//target more options link
-		WebElement More_options=driver.findElement(By.xpath("//a[@id='MoreOptionsLink']"));
 		
 		/*
-		 * Click More options. Expected "Class of travel" and "Preffered
-		 * airlines" element should visible at webpage..
+		 * Click More options. 
+		 * Expected "Class of travel" dropdown visible at webpage
 		 */
+		
+		//target more options link
+		WebElement More_options=driver.findElement(By.partialLinkText("More options:"));
 		More_options.click();
 		Thread.sleep(5000);
 		
-		WebElement Travel_Class=driver.findElement(By.xpath(".//*[@id='Class']"));
-		WebElement Airlines=driver.findElement(By.xpath("//input[@name='airline']"));
+		WebElement Travel_Class=driver.findElement(By.xpath("(//select[@class='bc-neutral-100 bg-transparent'])[4]"));
 		
-		
-		if(Travel_Class.isDisplayed() &&  Airlines.isDisplayed())
-			System.out.println("Testpass:--> As expected travelclass and Airlines element visible at webpage");
+		if(Travel_Class.isDisplayed())
+			System.out.println("Tetpass, Travel class dropdown visible at webpage");
 		else
-			System.out.println("TestFail;--> travelclass and Airlines expected it tobe visible");
+			System.out.println("Testfail, Travel class dropdown hidden at webpage");
+		
+		
 		
 		
 		/*
-		 *  => Click More options.when travel class and airlines elements are visible
-		 *  => Expected "Class of travel" and "Preffered
-		 * 		airlines" elements hide from webpage
+		 *  => Click More options.when travel class element is visible
+		 *  => Expected "Class of travel" element  hide from webpage
 		 */
-		Thread.sleep(5000);
-		
-		if(Travel_Class.isDisplayed() && Airlines.isDisplayed())
+		Thread.sleep(5000);   //Restoring object to avoid staleElementReference exception
+		Travel_Class=driver.findElement(By.xpath("(//select[@class='bc-neutral-100 bg-transparent'])[4]"));
+		if(Travel_Class.isDisplayed())
 		{
-				//Click Moreoptions link
+				//Restroing to avoid stale Element Reference exception..
+				More_options=driver.findElement(By.partialLinkText("More options:"));
 				More_options.click();
+				Thread.sleep(4000);
 				
-				if(!Travel_Class.isDisplayed() && !Airlines.isDisplayed())
-					System.out.println("Testpass:--> As expected it is hidden at webpage");
+				if(!Travel_Class.isDisplayed())  //!--Not [It make opposite condition]
+				{
+					System.out.println("Testpass, OBject Hidden at webpage");
+				}
 				else
-					System.out.println("Testfail:--> Element still visible at webpage");
+				{
+					System.out.println("Testfail, OBjevt visible at webapge");
+				}	
 		}
 		else
-			System.out.println("Precondition failed");
+		{
+			System.out.println("Travel class element is not visible and more otpion not clicked");
+		}
 		
 		
 	}

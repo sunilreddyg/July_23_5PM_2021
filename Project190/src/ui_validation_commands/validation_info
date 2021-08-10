@@ -29,7 +29,7 @@ User interface validation commands:-->
 						[Element is enabled and accept all type of actions]
 						
 				=> Method return false when selected element ready state is OFF  
-						[Element is disabale and not accepting any type of action]
+						[Element is disabled and not accepting any type of actions]
 								
 			Syntax:-->
 					//Identify Element
