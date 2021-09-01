@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" total="6" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[tc005  Executed]]>
+    </line>
+    <line>
+      <![CDATA[Tc009 executed]]>
+    </line>
+  </reporter-output>
+  <suite name="default" duration-ms="62" started-at="2021-09-01T13:33:47Z" finished-at="2021-09-01T13:33:47Z">
+    <groups>
+      <group name="Reg2">
+        <method signature="TestSuite3.tc008()[pri:0, instance:framework.testng.Groups.TestSuite3@23ceabc1]" name="tc008" class="framework.testng.Groups.TestSuite3"/>
+      </group> <!-- Reg2 -->
+      <group name="Reg1">
+        <method signature="TestSuite1.tc001()[pri:0, instance:framework.testng.Groups.TestSuite1@32d992b2]" name="tc001" class="framework.testng.Groups.TestSuite1"/>
+        <method signature="TestSuite1.tc003()[pri:0, instance:framework.testng.Groups.TestSuite1@32d992b2]" name="tc003" class="framework.testng.Groups.TestSuite1"/>
+        <method signature="TestSuite2.tc005()[pri:0, instance:framework.testng.Groups.TestSuite2@5dfcfece]" name="tc005" class="framework.testng.Groups.TestSuite2"/>
+        <method signature="TestSuite2.tc006()[pri:0, instance:framework.testng.Groups.TestSuite2@5dfcfece]" name="tc006" class="framework.testng.Groups.TestSuite2"/>
+        <method signature="TestSuite3.tc009()[pri:0, instance:framework.testng.Groups.TestSuite3@23ceabc1]" name="tc009" class="framework.testng.Groups.TestSuite3"/>
+      </group> <!-- Reg1 -->
+    </groups>
+    <test name="defult" duration-ms="62" started-at="2021-09-01T13:33:47Z" finished-at="2021-09-01T13:33:47Z">
+      <class name="framework.testng.Groups.TestSuite2">
+        <test-method status="PASS" signature="tc005()[pri:0, instance:framework.testng.Groups.TestSuite2@5dfcfece]" name="tc005" duration-ms="2" started-at="2021-09-01T19:03:47Z" finished-at="2021-09-01T19:03:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tc005  Executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc005 -->
+        <test-method status="FAIL" signature="tc006()[pri:0, instance:framework.testng.Groups.TestSuite2@5dfcfece]" name="tc006" duration-ms="3" started-at="2021-09-01T19:03:47Z" finished-at="2021-09-01T19:03:47Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at framework.testng.Groups.TestSuite2.tc006(TestSuite2.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+      </class> <!-- framework.testng.Groups.TestSuite2 -->
+      <class name="framework.testng.Groups.TestSuite1">
+        <test-method status="PASS" signature="tc001()[pri:0, instance:framework.testng.Groups.TestSuite1@32d992b2]" name="tc001" duration-ms="16" started-at="2021-09-01T19:03:47Z" finished-at="2021-09-01T19:03:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001 -->
+        <test-method status="PASS" signature="tc003()[pri:0, instance:framework.testng.Groups.TestSuite1@32d992b2]" name="tc003" duration-ms="3" started-at="2021-09-01T19:03:47Z" finished-at="2021-09-01T19:03:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003 -->
+      </class> <!-- framework.testng.Groups.TestSuite1 -->
+      <class name="framework.testng.Groups.TestSuite3">
+        <test-method status="PASS" signature="tc009()[pri:0, instance:framework.testng.Groups.TestSuite3@23ceabc1]" name="tc009" duration-ms="2" started-at="2021-09-01T19:03:47Z" finished-at="2021-09-01T19:03:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc009 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc009 -->
+        <test-method status="SKIP" signature="tc008()[pri:0, instance:framework.testng.Groups.TestSuite3@23ceabc1]" name="tc008" duration-ms="0" depends-on-groups="Reg1" started-at="2021-09-01T19:03:47Z" finished-at="2021-09-01T19:03:47Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestSuite3.tc008()[pri:0, instance:framework.testng.Groups.TestSuite3@23ceabc1] depends on not successfully finished methods in group "Reg1"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestSuite3.tc008()[pri:0, instance:framework.testng.Groups.TestSuite3@23ceabc1] depends on not successfully finished methods in group "Reg1"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1028)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc008 -->
+      </class> <!-- framework.testng.Groups.TestSuite3 -->
+    </test> <!-- defult -->
+  </suite> <!-- default -->
+</testng-results>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [default]">
+  <test name="defult(failed)">
+    <groups>
+      <run>
+        <include name="Reg1"/>
+        <include name="Reg2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="framework.testng.Groups.TestSuite1">
+        <methods>
+          <include name="tc001"/>
+          <include name="tc003"/>
+        </methods>
+      </class> <!-- framework.testng.Groups.TestSuite1 -->
+      <class name="framework.testng.Groups.TestSuite2">
+        <methods>
+          <include name="tc006"/>
+          <include name="tc005"/>
+        </methods>
+      </class> <!-- framework.testng.Groups.TestSuite2 -->
+      <class name="framework.testng.Groups.TestSuite3">
+        <methods>
+          <include name="tc009"/>
+          <include name="tc008"/>
+        </methods>
+      </class> <!-- framework.testng.Groups.TestSuite3 -->
+    </classes>
+  </test> <!-- defult(failed) -->
+</suite> <!-- Failed suite [default] -->
