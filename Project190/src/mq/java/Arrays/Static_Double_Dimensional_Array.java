@@ -28,6 +28,13 @@ public class Static_Double_Dimensional_Array {
 		 */
 		int Array_length=data.length;
 		System.out.println("Array length is ---> "+Array_length);
+		
+		
+		//Read all array next values
+		for (String[] Row : data) 
+		{
+			System.out.println(Row[0]+"   "+Row[1]);
+		}
 
 	}
 
