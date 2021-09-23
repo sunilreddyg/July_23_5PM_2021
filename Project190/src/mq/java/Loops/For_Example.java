@@ -1,6 +1,7 @@
 package mq.java.Loops;
 
-public class For_Example {
+public class For_Example 
+{
 
 	public static void main(String[] args) 
 	{
